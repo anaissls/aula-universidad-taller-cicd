@@ -20,5 +20,11 @@
         "**/.pytest_cache": true,
         "**/.ruff_cache": true,
         "**/__pycache__": true
+    },
+    "[python]": {
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "never",
+        "source.organizeImports": "never"
     }
+}
 }
