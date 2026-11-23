@@ -3,16 +3,16 @@ name = "python-cicd-kata"
 version = "0.1.0"
 description = "Python project to practice CI/CD concepts"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
-    "fastapi[standard]>=0.115.8",
+    "fastapi[standard]>=0.165.0",
 ]
 
 [dependency-groups]
 dev = [
-    "pyright>=1.1.394",
-    "pytest>=8.3.4",
-    "ruff>=0.9.6",
+    "pyright[nodejs]>=1.1.414",
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
 ]
 
 [tool.pyright]
@@ -43,6 +43,7 @@ ignore = [
     "T201",
     "PLR0913",
     "S608",
+    "CPY001",
     # Rules cause conflicts when used with the formatter
     "ISC001",
     "COM812",
